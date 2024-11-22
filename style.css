@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #e6e6e6;
+}
+
+strong {
+    color: green;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+header {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .me {
+        & img {
+            border-radius: 10px;
+        }
+    }    
+    & nav {
+        & ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            font-size: 1.5rem;
+            & li {
+                list-style-type: none;
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 1rem;
+    font-family: Roboto;
+    & h1, h2 {
+        font-family: "Press Start 2P", system-ui;
+    }
+    & h1, h2, h3 {
+        text-align: center;
+    }
+    & .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & p {
+            text-align: center;
+        }
+    }
+    & .projects {
+        display: flex;
+        gap: 100px;
+
+        & .project {
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            & p {
+                text-align: justify;
+            }
+        }
+    }
+}
+
+
+footer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+@media screen and (max-width: 1080px) {
+    body {
+        font-size: 0.8rem;
+    }
+    header {
+        & nav {
+            & ul {
+                gap: 20px;
+                font-size: 1rem;
+            }
+        }
+    } 
+    main {
+        & .about {
+            & p {
+                text-align: justify;
+            }
+        }
+        & .projects {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    footer {
+        margin-top: 150px;
+    }
+}
