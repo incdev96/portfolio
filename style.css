@@ -29,9 +29,11 @@ header {
     flex-direction: column;
     align-items: center;
     & .me {
-        & img {
-            border-radius: 10px;
-        }
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background-image: url(./icons/me.jpeg);
+        background-size: cover center;
     }    
     & nav {
         & ul {
